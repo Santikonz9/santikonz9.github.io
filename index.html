@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Santikon Tapkila — Full-Stack & AI / Quant Engineer</title>
+<meta name="description" content="Portfolio of Santikon Tapkila — full-stack developer and AI / quant engineer building intelligent trading systems, AI assistants, and high-performance web platforms." />
+<meta name="theme-color" content="#05070d" />
+<meta name="author" content="Santikon Tapkila" />
+<meta name="keywords" content="Santikon Tapkila, full-stack developer, AI engineer, quant developer, trading systems, depa, portfolio, React, Next.js, Python" />
+<meta property="og:title" content="Santikon Tapkila — Full-Stack & AI / Quant Engineer" />
+<meta property="og:description" content="Building AI, quant trading systems, and beautiful web platforms. 19 real projects across AI, trading, web, games and depa internship work." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://santikonz9.github.io/myportsantikon.github.io/" />
+<meta property="og:image" content="https://santikonz9.github.io/myportsantikon.github.io/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Santikon Tapkila — Full-Stack & AI / Quant Engineer" />
+<meta name="twitter:description" content="Building AI, quant trading systems, and beautiful web platforms." />
+<meta name="twitter:image" content="https://santikonz9.github.io/myportsantikon.github.io/assets/og-image.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='78' font-family='monospace' font-weight='bold'>⬡</text></svg>" />
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <div class="pl-mono">ST</div>
+  <div class="pl-bar"><span id="pl-fill"></span></div>
+  <div class="pl-count"><span id="pl-num">0</span><small>%</small></div>
+  <div class="pl-tag">SANTIKON&nbsp;·&nbsp;TAPKILA</div>
+</div>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1" data-depth="0.03"></span>
+  <span class="blob b2" data-depth="0.05"></span>
+  <span class="blob b3" data-depth="0.02"></span>
+</div>
+<div class="noise" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div class="scroll-progress"><span id="scroll-bar"></span></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="brand" data-magnetic>
+    <span class="brand-mark">⬡</span>
+    <span class="brand-name">Santikon<span class="grad-text">.dev</span></span>
+  </a>
+  <nav class="nav-links" id="nav-links">
+    <a href="#home" class="active" data-en="Home" data-th="หน้าแรก">Home</a>
+    <a href="#about" data-en="About" data-th="เกี่ยวกับ">About</a>
+    <a href="#skills" data-en="Skills" data-th="ทักษะ">Skills</a>
+    <a href="#work" data-en="Work" data-th="ผลงาน">Work</a>
+    <a href="#experience" data-en="Journey" data-th="เส้นทาง">Journey</a>
+    <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="lang-toggle" class="pill-btn" title="Switch language" aria-label="Switch language">EN</button>
+    <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    <button id="burger" class="icon-btn burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="hero-left">
+    <span class="chip reveal"><span class="dot"></span> <span data-en="Available for freelance & collabs" data-th="พร้อมรับงานและร่วมงาน">Available for freelance &amp; collabs</span></span>
+    <h1 class="hero-title">
+      <span class="hi reveal" data-en="Hi, I'm" data-th="สวัสดี ผมชื่อ">Hi, I'm</span>
+      <span class="name grad-text" id="hero-name" data-splittext>Santikon Tapkila</span>
+    </h1>
+    <p class="hero-role reveal"><span class="role-lead" data-en="I build " data-th="ผมพัฒนา ">I build </span><span id="typed" class="typed"></span><span class="caret">▌</span></p>
+    <p class="hero-desc reveal" data-en="Full-stack developer & AI / quant engineer. I turn complex ideas — trading engines, AI assistants, safety systems, playful web apps — into fast, reliable products with a clean, thoughtful interface." data-th="นักพัฒนา Full-stack และวิศวกร AI / Quant ผมเปลี่ยนไอเดียที่ซับซ้อน ไม่ว่าจะเป็นระบบเทรด, ผู้ช่วย AI, ระบบความปลอดภัย หรือเว็บแอปสนุก ๆ ให้กลายเป็นผลิตภัณฑ์ที่เร็ว เสถียร และมีอินเทอร์เฟซที่สวยงามพิถีพิถัน">
+      Full-stack developer &amp; AI / quant engineer. I turn complex ideas — trading engines, AI assistants, safety systems, playful web apps — into fast, reliable products with a clean, thoughtful interface.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#work" class="btn btn-primary" data-magnetic><span data-en="View My Work" data-th="ดูผลงาน">View My Work</span> <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-ghost" data-magnetic><span data-en="Let's Talk" data-th="คุยกันหน่อย">Let's Talk</span> <span class="arrow">✦</span></a>
+    </div>
+    <div class="hero-social reveal">
+      <a href="https://github.com/Santikonz9" target="_blank" rel="noopener" aria-label="GitHub" data-magnetic>GH</a>
+      <a href="mailto:santikon.gf@gmail.com" aria-label="Email" data-magnetic>@</a>
+      <a href="#" aria-label="Resume" data-magnetic>CV</a>
+    </div>
+  </div>
+
+  <div class="hero-right reveal">
+    <div class="profile-card" id="tilt-card" data-tilt>
+      <div class="pc-shine"></div>
+      <div class="pc-top">
+        <span class="pc-tag">◍ ~/portfolio</span>
+        <span class="pc-status"><span class="dot"></span> <span data-en="Online" data-th="ออนไลน์">Online</span></span>
+      </div>
+      <div class="pc-avatar">
+        <img class="avatar-photo" src="assets/profile.webp" alt="Santikon Tapkila" />
+        <span class="pc-ring"></span>
+      </div>
+      <h3 class="pc-name">Santikon Tapkila</h3>
+      <p class="pc-title" data-en="Full-Stack · AI / Quant Engineer" data-th="Full-Stack · วิศวกร AI / Quant">Full-Stack · AI / Quant Engineer</p>
+      <div class="pc-mini-stats">
+        <div><b class="counter" data-target="19" data-suffix="+">0</b><span data-en="Projects" data-th="โปรเจกต์">Projects</span></div>
+        <div><b class="counter" data-target="12" data-suffix="+">0</b><span data-en="Tech" data-th="เทคโนโลยี">Tech</span></div>
+        <div><b>∞</b><span data-en="Coffee" data-th="กาแฟ">Coffee</span></div>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-block" data-magnetic><span data-en="Contact Me" data-th="ติดต่อผม">Contact Me</span></a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee-track"></div>
+</div>
+
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-en="Get to know me" data-th="ทำความรู้จัก">Get to know me</span>
+    <h2 class="section-title" data-en="About Me" data-th="เกี่ยวกับผม">About Me</h2>
+  </div>
+  <div class="about-grid">
+    <div class="glass about-bio reveal">
+      <p data-en="I'm Santikon Tapkila — a full-stack developer and AI / quant engineer who loves building things that feel alive. My range spans deterministic trading engines on live market data, Claude-powered assistants, client-side ML security tools, and playful real-time web apps. I care about clean architecture, fast interfaces, and details that make a product feel considered." data-th="ผมชื่อ Santikon Tapkila นักพัฒนา Full-stack และวิศวกร AI / Quant ที่ชอบสร้างสิ่งที่ 'มีชีวิต' งานของผมมีตั้งแต่ระบบเทรดแบบ deterministic บนข้อมูลตลาดจริง, ผู้ช่วยที่ขับเคลื่อนด้วย Claude, เครื่องมือความปลอดภัยด้วย ML ฝั่งผู้ใช้ ไปจนถึงเว็บแอปเรียลไทม์สนุก ๆ ผมใส่ใจสถาปัตยกรรมที่สะอาด อินเทอร์เฟซที่เร็ว และรายละเอียดเล็ก ๆ ที่ทำให้งานดูพิถีพิถัน">
+        I'm Santikon Tapkila — a full-stack developer and AI / quant engineer who loves building things that feel alive. My range spans deterministic trading engines on live market data, Claude-powered assistants, client-side ML security tools, and playful real-time web apps. I care about clean architecture, fast interfaces, and details that make a product feel considered.
+      </p>
+      <div class="about-stats">
+        <div class="stat"><b class="counter" data-target="19" data-suffix="+">0</b><span data-en="Projects Shipped" data-th="โปรเจกต์ที่ส่งมอบ">Projects Shipped</span></div>
+        <div class="stat"><b class="counter" data-target="5" data-suffix="">0</b><span data-en="Domains Mastered" data-th="สายงานที่ทำ">Domains</span></div>
+        <div class="stat"><b class="counter" data-target="100" data-suffix="%">0</b><span data-en="Self-Driven" data-th="ลงมือเอง">Self-Driven</span></div>
+      </div>
+      <p class="about-motto">"<span data-en="Build with intent. Ship with care." data-th="สร้างอย่างมีเป้าหมาย ส่งมอบอย่างใส่ใจ">Build with intent. Ship with care.</span>"</p>
+    </div>
+
+    <div class="about-side-col">
+      <div class="glass about-side reveal">
+        <h4 data-en="What I do" data-th="สิ่งที่ผมทำ">What I do</h4>
+        <ul class="do-list">
+          <li><span class="do-ic">◆</span> <span data-en="AI / LLM & Agent Engineering" data-th="วิศวกรรม AI / LLM และ Agent">AI / LLM &amp; Agent Engineering</span></li>
+          <li><span class="do-ic">◆</span> <span data-en="Quant & Algorithmic Trading" data-th="ระบบเทรดเชิงปริมาณ">Quant &amp; Algorithmic Trading</span></li>
+          <li><span class="do-ic">◆</span> <span data-en="Full-Stack Web & App Dev" data-th="พัฒนาเว็บและแอป Full-Stack">Full-Stack Web &amp; App Dev</span></li>
+          <li><span class="do-ic">◆</span> <span data-en="UI / UX & Motion Design" data-th="ออกแบบ UI / UX และ Motion">UI / UX &amp; Motion Design</span></li>
+        </ul>
+      </div>
+      <div class="glass about-now reveal">
+        <span class="now-label"><span class="dot"></span> <span data-en="Internship" data-th="ฝึกงาน">Internship</span></span>
+        <p data-en="Currently interning at depa — Thailand's Digital Economy Promotion Agency — building digital tooling, process automation, and econ-digital initiatives." data-th="ปัจจุบันฝึกงานที่ depa — สำนักงานส่งเสริมเศรษฐกิจดิจิทัล — สร้างเครื่องมือดิจิทัล ระบบอัตโนมัติ และโครงการเศรษฐกิจดิจิทัล"><span class="depa-badge">depa</span> — currently interning at Thailand's Digital Economy Promotion Agency, building digital tooling, process automation &amp; econ-digital initiatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-en="My toolkit" data-th="เครื่องมือของผม">My toolkit</span>
+    <h2 class="section-title" data-en="Skills & Technologies" data-th="ทักษะและเทคโนโลยี">Skills &amp; Technologies</h2>
+    <p class="section-sub" data-en="The stack I reach for — from model APIs and market data to pixels on screen." data-th="สแต็กที่ผมใช้ ตั้งแต่ API ของโมเดลและข้อมูลตลาด ไปจนถึงทุกพิกเซลบนจอ">The stack I reach for — from model APIs and market data to pixels on screen.</p>
+  </div>
+  <div class="skills-grid" id="skills-grid"></div>
+</section>
+
+<section id="work" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-en="Selected work" data-th="ผลงานคัดสรร">Selected work</span>
+    <h2 class="section-title" data-en="Projects" data-th="ผลงาน">Projects</h2>
+    <p class="section-sub" data-en="Real things I've designed and built — trading systems, AI tools, platforms, and games." data-th="ผลงานจริงที่ผมออกแบบและสร้างเอง ทั้งระบบเทรด เครื่องมือ AI แพลตฟอร์ม และเกม">Real things I've designed and built — trading systems, AI tools, platforms, and games.</p>
+  </div>
+
+  <div class="featured-wrap" id="featured-wrap"></div>
+
+  <div class="more-label reveal"><span></span><span class="more-txt" data-en="More projects" data-th="ผลงานอื่น ๆ">More projects</span><span></span></div>
+
+  <div class="filter-bar reveal" id="filter-bar">
+    <button class="filter active" data-filter="all" data-en="All" data-th="ทั้งหมด">All</button>
+    <button class="filter filter-depa" data-filter="depa">depa</button>
+    <button class="filter" data-filter="ai" data-en="AI / ML" data-th="AI / ML">AI / ML</button>
+    <button class="filter" data-filter="quant" data-en="Quant / Trading" data-th="เทรด / Quant">Quant / Trading</button>
+    <button class="filter" data-filter="web" data-en="Web" data-th="เว็บ">Web</button>
+    <button class="filter" data-filter="app" data-en="App / Tools" data-th="แอป / เครื่องมือ">App / Tools</button>
+    <button class="filter" data-filter="game" data-en="Game" data-th="เกม">Game</button>
+  </div>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-en="The path so far" data-th="เส้นทางที่ผ่านมา">The path so far</span>
+    <h2 class="section-title" data-en="Journey" data-th="เส้นทาง">Journey</h2>
+  </div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="contact" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-en="Let's talk" data-th="มาคุยกัน">Let's talk</span>
+    <h2 class="section-title" data-en="Contact & Chat" data-th="ติดต่อและแชท">Contact &amp; Chat</h2>
+    <p class="section-sub" data-en="Got a project, a weird idea, or just want to say hi? Reach out." data-th="มีโปรเจกต์ ไอเดียแปลก ๆ หรือแค่อยากทักทาย? ส่งข้อความมาได้เลย">Got a project, a weird idea, or just want to say hi? Reach out.</p>
+  </div>
+  <div class="contact-grid">
+
+    <div class="glass vcard reveal">
+      <div class="pc-shine"></div>
+      <div class="vc-head">
+        <div class="vc-avatar">
+          <img class="avatar-photo" src="assets/profile.webp" alt="Santikon Tapkila" />
+          <span class="pc-ring"></span>
+        </div>
+        <div class="vc-id">
+          <h3>Santikon Tapkila</h3>
+          <p class="vc-role" data-en="Full-Stack · AI / Quant Engineer" data-th="Full-Stack · วิศวกร AI / Quant">Full-Stack · AI / Quant Engineer</p>
+          <span class="chip"><span class="dot"></span> <span data-en="Available for work" data-th="พร้อมรับงาน">Available for work</span></span>
+        </div>
+      </div>
+
+      <p class="vc-bio" data-en="Developer & AI / quant engineer. I design and ship trading systems, AI tools, and polished web platforms — currently interning at depa." data-th="นักพัฒนาและวิศวกร AI / Quant ออกแบบและสร้างระบบเทรด เครื่องมือ AI และเว็บแพลตฟอร์มที่ขัดเงา ปัจจุบันฝึกงานอยู่ที่ depa">Developer &amp; AI / quant engineer. I design and ship trading systems, AI tools, and polished web platforms — currently interning at depa.</p>
+
+      <ul class="vc-info">
+        <li><span class="vc-ic">📍</span><span><small data-en="Location" data-th="ที่อยู่">Location</small><b data-en="Thailand" data-th="ประเทศไทย">Thailand</b></span></li>
+        <li><span class="vc-ic">🏢</span><span><small data-en="Internship" data-th="ฝึกงาน">Internship</small><b>depa · <span data-en="Digital Economy Promotion Agency" data-th="สำนักงานส่งเสริมเศรษฐกิจดิจิทัล">Digital Economy Promotion Agency</span></b></span></li>
+        <li><span class="vc-ic">✉️</span><span><small data-en="Email" data-th="อีเมล">Email</small><b><a href="mailto:santikon.gf@gmail.com">santikon.gf@gmail.com</a></b></span></li>
+        <li><span class="vc-ic">📱</span><span><small data-en="Phone" data-th="โทรศัพท์">Phone</small><b><a href="tel:0640358452">064-035-8452</a></b></span></li>
+      </ul>
+
+      <div class="vc-tags">
+        <span>AI / LLM</span><span>Quant Trading</span><span>Full-Stack</span><span>UI / UX</span>
+      </div>
+
+      <div class="vc-footer">
+        <div class="vc-social">
+          <a href="https://github.com/Santikonz9" target="_blank" rel="noopener" aria-label="GitHub" data-magnetic>GH</a>
+          <a href="mailto:santikon.gf@gmail.com" aria-label="Email" data-magnetic>@</a>
+        </div>
+        <a href="#" class="btn btn-primary" data-magnetic><span data-en="Download CV" data-th="ดาวน์โหลด CV">Download CV</span> <span class="arrow">↓</span></a>
+      </div>
+    </div>
+
+    <form class="glass contact-form reveal" id="contact-form" novalidate>
+      <label data-en="Full Name" data-th="ชื่อ-นามสกุล">Full Name</label>
+      <input name="name" type="text" placeholder="Input Name…" data-ph-en="Input Name…" data-ph-th="กรอกชื่อ…" required />
+      <label data-en="Email" data-th="อีเมล">Email</label>
+      <input name="email" type="email" placeholder="Input Email…" data-ph-en="Input Email…" data-ph-th="กรอกอีเมล…" required />
+      <label data-en="Message" data-th="ข้อความ">Message</label>
+      <textarea name="message" rows="5" placeholder="Message…" data-ph-en="Message…" data-ph-th="ข้อความ…" required></textarea>
+      <button type="submit" class="btn btn-primary btn-block" data-magnetic><span data-en="Send Message" data-th="ส่งข้อความ">Send Message</span> ➤</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="foot-inner">
+    <span>© <span id="year"></span> Santikon Tapkila.</span>
+    <span data-en="Designed & built with heart & code." data-th="ออกแบบและสร้างด้วยหัวใจและโค้ด">Designed &amp; built with heart &amp; code.</span>
+  </div>
+</footer>
+
+<a href="#home" id="to-top" aria-label="Back to top" data-magnetic>↑</a>
+<div id="toast" class="toast"></div>
+
+<div id="pj-modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <div class="modal-visual" id="modal-visual"></div>
+    <div class="modal-body">
+      <span class="modal-kind" id="modal-kind"></span>
+      <span class="pj-tag" id="modal-tag"></span>
+      <h3 id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+      <ul class="modal-hl" id="modal-hl"></ul>
+      <div class="pj-stack" id="modal-stack"></div>
+      <p class="modal-note" id="modal-note"></p>
+      <div class="modal-actions">
+        <a class="btn btn-primary modal-visit" id="modal-visit" target="_blank" rel="noopener"><span data-en="Visit live site" data-th="เข้าชมเว็บจริง">Visit live site</span> <span class="arrow">↗</span></a>
+        <button class="btn btn-ghost" data-close><span data-en="Close" data-th="ปิด">Close</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
